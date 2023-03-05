@@ -21,7 +21,7 @@ namespace Client
             while(true)
             {
                 Console.Write("> ");
-                string message = Console.ReadLine();
+                string? message = Console.ReadLine();
                 sWriter.WriteLine(message);
                 sWriter.Flush();
             }
