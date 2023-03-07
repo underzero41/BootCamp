@@ -33,7 +33,7 @@ namespace Server
             StreamReader sReader = new StreamReader(client.GetStream(), Encoding.UTF8);
             while(true)
             {
-                string message = sReader.ReadLine();
+                string? message = sReader.ReadLine();
                 Console.WriteLine($"Client write - {message}");
             }
         }
